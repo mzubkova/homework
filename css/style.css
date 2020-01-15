@@ -59,11 +59,11 @@
   }
 
   .btn {
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .d-flex {
     display: flex !important;
@@ -103,6 +103,16 @@
     font-family: "Roboto Condensed";
     font-size: 14px;
     margin-left: 1050px;
+  }
+  
+  .main-header-nav-link:active {
+    background-color:#00ac6a;
+    border-radius: 17px;
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   .main-header-nav a + a {

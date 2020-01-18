@@ -22,7 +22,30 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 70px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 17px;
+}
+
+li a:hover:not(.active) {
+  background-color: #fff;
+}
+
+li a.active {
+  color: white;
 }
 
 input, textarea {
@@ -93,12 +116,20 @@ button {
   position: relative;
 }
 
+.style-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
 .main-header-nav {
-  color: #0a0b0f;
-  font-weight: 700;
-  font-family: "Roboto Condensed";
-  font-size: 14px;
-  margin-left: 1050px;
+  margin-left: 1000px;
 }
 
 .main-header-nav-link:active {
@@ -111,7 +142,7 @@ button {
   text-transform: uppercase;
 }
 
-.main-header-nav a + a {
+.main-header-nav li + li {
   margin-left: 40px;
 }
 
@@ -401,6 +432,7 @@ button {
 .map-wrapper {
   margin-top: -25px;
   position: relative;
+  height: 480px;
 }
 
 .map-wrapper img {
@@ -427,6 +459,7 @@ button {
   margin-bottom: 20px;
   width: 540px;
 }
+
 .customers-contact {
   margin-left: 230px;
   margin-top: 150px;
@@ -483,31 +516,26 @@ button {
   text-align: center;
   opacity: 0.7;
 }
-.footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 80px;
-}
 
 .content {
 	padding-bottom: 90px;
 }
 
-.footer-wrap {
-  box-sizing: border-box;
-}
-.footer-wrap {
+.wrap {
   margin-left: 230px;
+  margin-top: 100px;
+  width: 100%;
+  margin-right: 250px;
+  margin-bottom: 100px;
 }
 
-.item {
-  margin-right: auto;
-  margin-top: 100px;
+.footer {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
- 
-.footer-title{
+
+.footer-title {
   color: #0a0b0f;
   font-family: Roboto;
   font-size: 16px;
@@ -515,17 +543,18 @@ button {
 }
 
 .footer-item-link {
-  color: #0a0b0f;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
   margin-top: 40px;
 }
 
 .item-link {
   padding: 0;
   margin: 0;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
 }
 
 .footer-item {
@@ -534,9 +563,12 @@ button {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
   text-decoration: underline;
-  margin-top: 40px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  float: none;
 }
 
 .footer-rights {
@@ -544,10 +576,5 @@ button {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-}
-
-.wrap {
-  margin-bottom: 100px;
-  max-width: 100%;
-  position: relative;
+  margin-left: 250px;
 }
